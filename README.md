@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date: 14.02.2024
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -21,17 +21,53 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
-```
+
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
-<!DOCTYPE html>
 <html>
-<head>
-<title>My webserver</title>
-</head>
-<body>
-<h1>Welcome<h1>
-</body>
+	<head>
+		<title>
+			SoftWare Companies
+		</title>
+
+	</head>
+	<body bgcolor= "skyblue" align="center">
+		
+		<table align="center" border="5" cellspacing="6" cellpadding="5">
+			<caption>Top Five Revenue Generating Software Companies</caption>
+			<tr>
+				<th> S.No </th>
+				<th> Company Name </th>
+				<th> Revenue </th>
+			</tr>
+			<tr>
+				<td> 1 </td>
+				<td> Microsoft </td>
+				<td> $86.8 </td>
+			</tr>
+			<tr>
+				<td> 2 </td>
+				<td> Oracle </td>
+				<td> $67.1 </td>
+			</tr>
+			<tr>
+				<td> 3 </td>
+				<td> SAP </td>
+				<td> $50.9 </td>
+			</tr>
+			<tr>
+				<td> 4 </td>
+				<td> Walmart </td>
+				<td> $49.9</td>
+			</tr>
+			<tr>
+				<td> 5 </td>
+				<td> Google </td>
+				<td> $40.9 </td>
+			</tr>
+			</table>
+	</body>
+
 </html>
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -45,11 +81,12 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-```
+
 
 ## OUTPUT:
-![alt text](Screenshot-EX-1a.png)
-![alt text](Screenshot-Ex-1b.png)
+![077c5ecf-94ab-4d9a-b7fa-520c29725c04](https://github.com/dr-pvijayan/simplewebserver/assets/144979077/e8cf64ff-aec6-4cf5-829d-40a3dcaaa987)
+
+![05534587-5629-401f-96da-479c6758766d](https://github.com/dr-pvijayan/simplewebserver/assets/144979077/14a92db7-739c-430c-91db-242d4cd10a15)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
