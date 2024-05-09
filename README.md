@@ -23,8 +23,7 @@ Testing the webserver.
 ## PROGRAM:
 
 ```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = 
+
 <html>
 	<head>
 		<title>
@@ -70,22 +69,13 @@ content =
 	</body>
 
 </html>
-class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("request received")
-        self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-server_address = ('',8000)
-httpd = HTTPServer(server_address,myhandler)
-print("my webserver is running...")
-httpd.serve_forever()
+
 ```
 
 ## OUTPUT:
-![312766967-8a20bfda-cc81-4b7a-872a-604395bf7428](https://github.com/Sulthan06042007/simplewebserver/assets/144980103/ceaf044c-e08a-4a5d-836d-9bea26528d8a)
-![312767097-dedd898c-e20f-4684-bab2-3bf9046ad37d](https://github.com/Sulthan06042007/simplewebserver/assets/144980103/b9106875-de21-48c0-bbec-47a0b071e6ea)
+![Screenshot 2024-05-09 144551](https://github.com/Sulthan06042007/simplewebserver/assets/144979077/679886e3-d2f5-4ceb-b41f-a44581396501)
+
+![Screenshot 2024-05-09 144443](https://github.com/Sulthan06042007/simplewebserver/assets/144979077/5c5794c8-92c0-4c8b-91d3-3bedadf158b2)
 
 
 ## RESULT:
