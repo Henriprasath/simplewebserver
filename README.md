@@ -50,7 +50,9 @@ httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
 ```
 ## OUTPUT:
+![Screenshot 2024-05-09 144551](https://github.com/dr-pvijayan/simplewebserver/assets/144979077/6d1b2e4a-f1dd-4625-b02a-2efb3d932b96)
 
+![Screenshot 2024-03-15 134301](https://github.com/dr-pvijayan/simplewebserver/assets/144979077/0845cc18-cc9b-46a9-91f0-1c59fe655bc7)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
